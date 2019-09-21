@@ -1,4 +1,4 @@
-#Bday Bot
+# Bday Bot
 A simple but cool chatbot that starts a conversation with a user. The bot asks:
 - your name
 - when is your birthday
@@ -8,8 +8,8 @@ A simple but cool chatbot that starts a conversation with a user. The bot asks:
 ![layout examples](snapshot.png)  
 
 
-#Architecture 
-##Database 
+# Architecture 
+## Database 
 To mimic a database I am using [JSON-SERVER](https://github.com/typicode/json-server#database)
 JSON Server supports RESTful API conventions by default which means we don't even need to create custom routes to perform actions on the data. Data is stored inside the "messages" array in db/db.json. The nice thing is whenever a message is saved it is automatically assigned an id which we can use to access or delete a certain message. 
 
@@ -22,15 +22,15 @@ URL:
 http://localhost:3000
 
 Default Routes: 
-GET    /messages
-GET    /messages/{id}
-POST   /messages
-PUT    /messages/{id}
-PATCH  /messages/{id}
-DELETE /messages/{id} 
+- GET    /messages
+- GET    /messages/{id}
+- POST   /messages
+- PUT    /messages/{id}
+- PATCH  /messages/{id}
+- DELETE /messages/{id} 
 
 
-##Express/Socket.io Server
+## Express/Socket.io Server
 Socket.io is used to handle sending/receiving mesages between bday bot and users.  
 
 Setup: 
@@ -46,7 +46,7 @@ Test:
 
 
 
-##React App
+## React App
 The front end is a basic app that interfaces between the bot and the user. For styling I am using Semantic UI. 
 
 Setup: 
